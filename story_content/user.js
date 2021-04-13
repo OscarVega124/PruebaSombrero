@@ -2,13 +2,13 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "63RsKSNSP2c":
+      case "5V0CUsSWZhB":
         Script1();
         break;
-      case "5sz20TjUo60":
+      case "68f4rWGCU7Z":
         Script2();
         break;
-      case "6KW04h1PeAY":
+      case "6Zsp6RGCTKS":
         Script3();
         break;
   }
@@ -31,7 +31,7 @@ function Script2()
 
 var d = new Date();
 
-var o = {year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit'};
+var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
 
 //PLACE YOUR WEB APP URL
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
