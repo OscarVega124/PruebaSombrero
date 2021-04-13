@@ -2,16 +2,16 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5cVNExyxiuq":
+      case "5n1bKrZPSMd":
         Script1();
         break;
-      case "5Z5p2Ki8D4y":
+      case "67BeW3a9rmG":
         Script2();
         break;
-      case "6D8PaX06rlh":
+      case "6qsQBs8uG6I":
         Script3();
         break;
-      case "5aIe5NvHRPx":
+      case "62muFmqe10B":
         Script4();
         break;
   }
@@ -25,7 +25,7 @@ function Script1()
 var d = new Date();
 
 var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
-HORA : d.toLocaleDateString('en-US', o)
+HORA = d.toLocaleDateString('en-US', o)
 
 }
 
