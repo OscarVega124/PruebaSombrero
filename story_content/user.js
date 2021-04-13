@@ -2,19 +2,34 @@ function ExecuteScript(strId)
 {
   switch (strId)
   {
-      case "5bEexfyFRnG":
+      case "5cVNExyxiuq":
         Script1();
         break;
-      case "6FcbW035K7V":
+      case "5Z5p2Ki8D4y":
         Script2();
         break;
-      case "6HHbiMX8bw8":
+      case "6D8PaX06rlh":
         Script3();
+        break;
+      case "5aIe5NvHRPx":
+        Script4();
         break;
   }
 }
 
 function Script1()
+{
+  var player = GetPlayer();
+ 
+
+var d = new Date();
+
+var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
+HORA : d.toLocaleDateString('en-US', o)
+
+}
+
+function Script2()
 {
   var head = document.getElementsByTagName('head')[0];
 var script = document.createElement('script');
@@ -23,15 +38,10 @@ script.type = 'text/javascript';
 head.appendChild(script)
 }
 
-function Script2()
+function Script3()
 {
   var player = GetPlayer();
  
-//Get Cool Date
-
-var d = new Date();
-
-var o = {hour:'2-digit', minute:'2-digit', second:'2-digit'};
 
 //PLACE YOUR WEB APP URL
 WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-gKs6fvqF-o15DLq0mSRggiQxKW/exec";
@@ -42,7 +52,7 @@ WEB_APP_URL = "https://script.google.com/macros/s/AKfycbyYIwFZ0kRP28wWDqyGhPg3q-
 storyline =
 {
  "FECHA" : new Date().toJSON().slice(0,10), //STORE DATE
- "HORA" : d.toLocaleDateString('en-US', o),
+ "ENTRADA" : player.GetVar("HORA"),
  "MATRICULA" : player.GetVar("Matricula"),
  "NOMBRE" : player.GetVar("Nombre"),
  "NIVEL ACADEMICO" : player.GetVar("NivelEstudios"),
@@ -57,7 +67,7 @@ storyline =
 }
 }
 
-function Script3()
+function Script4()
 {
   //DELAY SO JQUERY LIBRARY IS LOADED
 setTimeout(function (){
